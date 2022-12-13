@@ -1,3 +1,63 @@
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+body {
+    background-color: rgb(243, 235, 228);
 }
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    height: 450px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-radius: 5px; /* Радиус взял примерно - Откорректировать */
+}
+
+.image {
+    width: 300px;
+    height: 450px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.preview {
+    margin: 20px;
+}
+
+.preview-header h1 {
+    color: hsl(212, 21%, 14%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.preview-header h4 {
+    color: hsl(228, 12%, 48%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 4px;
+}
+
+.preview-paragraph {
+    color: hsl(228, 12%, 48%);
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
