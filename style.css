@@ -28,7 +28,7 @@ body {
 }
 
 .preview {
-    margin: 20px;
+    margin: 30px;
 }
 
 .preview-header h1 {
@@ -53,11 +53,37 @@ body {
 
 .preview-paragraph {
     color: hsl(228, 12%, 48%);
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: Montserrat, serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 0.9em;
+    line-height: 20px;
 }
 
+.preview-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+        
+}
+
+.correct-price p {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces, serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.first-price p {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat, serif;
+    text-decoration: line-through;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
