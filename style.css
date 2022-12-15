@@ -15,7 +15,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    border-radius: 5px; /* Радиус взял примерно - Откорректировать */
+    border-radius: 8px; /* Радиус взял примерно - Откорректировать */
 }
 
 .image {
@@ -23,8 +23,8 @@ body {
     height: 450px;
     background-image: url(./images/image-product-desktop.jpg);
     background-size: cover;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .preview {
@@ -86,4 +86,123 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
+}
+
+.preview-button {
+    width: 240px;
+    background-color: hsl(158, 36%, 37%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.preview-button-img {
+    margin-left: 60px;
+    margin-right: 5px;
+}
+
+.preview-button-text {
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    padding-left: 10px;   
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 479px) {
+    
+    .container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 0;
+        width: 375px;
+        height: auto;
+        margin-top: 20px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .image {
+        width: 375px;
+        height: 262px;
+        background-image: url(./images/image-product-mobile.jpg);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .preview {
+        margin: 0px;
+        width: 375px;
+    }
+
+    .preview-header h1 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .preview-header h4 {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .preview-paragraph {
+        margin-right: 30px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+
+    .correct-price p {
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .first-price p {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .preview-button {
+        grid-template-columns: 115px 2fr;
+        width: 315px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .preview-button-img {
+        text-align: right;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    
+    .preview-button-text {
+        font-family: Montserrat, serif;
+        font-weight: 500;
+        color: hsl(0, 0%, 100%);
+        text-align: left;
+        padding-left: 10px;   
+    }
+    
+
+       
+
 }
