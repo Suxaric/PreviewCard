@@ -99,6 +99,11 @@ body {
     margin-top: 15px;
 }
 
+.preview-button:hover {
+    background-color: hsl(158, 45%, 18%);
+    cursor: pointer;
+}
+
 .preview-button-img {
     margin-left: 60px;
     margin-right: 5px;
@@ -121,22 +126,30 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
+
+    body {
+        margin: 0;
+    }
+   
     
     .container {
         display: grid;
         grid-template-rows: 1fr auto;
         grid-template-columns: 0;
-        width: 375px;
+        width: 359px;
         height: auto;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
     }
 
     .image {
-        width: 375px;
-        height: 262px;
+        width: 359px;
+        height: 251px;
         background-image: url(./images/image-product-mobile.jpg);
         border-top-left-radius: 8px;
         border-bottom-left-radius: 0px;
@@ -146,7 +159,7 @@ body {
 
     .preview {
         margin: 0px;
-        width: 375px;
+        width: 359px;
     }
 
     .preview-header h1 {
@@ -163,6 +176,7 @@ body {
     }
 
     .preview-paragraph {
+        width: 300px;
         margin-right: 30px;
         margin-bottom: 5px;
         margin-left: 30px;
